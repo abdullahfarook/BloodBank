@@ -1,0 +1,573 @@
+body {
+   background-color: darkred;
+	display: block;
+}
+
+
+.menu{
+	display: flex;
+}
+
+
+
+#reg{
+   background-color:white;
+height:100px;
+margin-left:50px;
+margin-right:50px;
+margin-top:0px; 
+}
+
+ 
+
+#header-container {
+	background: white;
+	
+	margin: 0 auto;
+	width: 85%;
+}
+
+#navigation {
+    position: relative;
+    margin: 0 20%;
+	width: 90%;
+ 
+}
+
+#navlinks a {
+	margin-left: 15px;
+	width: 100%;
+	height: 2em;
+  
+	text-align: center;
+	color: white;
+	padding: .4em 0;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 1.2em;
+}
+
+#navlinks {
+	padding: 0px;
+	list-style-type: none;
+	width: 55%;
+	margin: 0 auto;
+	position: relative;
+	
+
+}
+#navlinks.displayed ul {
+	
+}
+.header-menu
+{
+	display: flex;
+	width: 100%;
+   
+}
+ul {
+    list-style-type: none;
+    margin:0;
+    padding:0;
+    overflow: hidden;
+ 
+ 
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    margin-top: 2px;
+}
+
+li a:hover {
+    background-color:black;
+	color: black;
+}
+
+
+          /*Slider CSS*/      /*Slider CSS*/      /*Slider CSS*/      /*Slider CSS*/      /*Slider CSS*/                           
+
+.mySlides {display:none}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+	overflow: hidden;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor:pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+.img {
+float:left;
+margin-left:100px;
+width:250px;
+border:5px solid;
+border-color: transparent;
+
+}
+.img:hover {
+
+border:5px solid;
+border-color:gray;    
+    }
+#discription {
+    height:auto;
+   margin-top:2px;
+    color: black;
+}
+#footer {
+   height:100px;
+   color: black;
+}
+#footerdata {
+    margin: 0 auto;
+	width: auto;
+	height: auto;
+	width: 50%;
+	position: relative;
+
+}
+
+#explan{
+	
+	color: black;
+	text-align: center;
+	font-family: 'optimus';
+	font-size: 17px;
+        
+} 
+#footer{
+	height: 50px;
+	background: #8A0707;
+	color: #fff;
+	text-align: center;
+	font-family: 'optimus';
+	font-size: 17px;
+}
+
+.About{
+    color:Black;
+    margin-left: 20px;
+    padding-top: 100px;
+    
+}
+#image{
+    float:right;
+margin-right: 120px;
+width:250px;
+height: 1000px;
+}
+#Para{
+    text-align: left;
+    width: 70%;
+}
+#Contact{
+    width: 500px;
+    color: black;
+    padding: 10px;
+    margin-left: 20px;
+    
+   
+}
+p.solid {border-style: solid  darkred;
+          }
+input[type=text]:focus {
+    border: 3px solid darkred;
+    border-style: solid;
+}
+input[type=button]{
+    background-color: darkred;
+}
+.related{
+    color: black;
+    margin-top: 100px;
+   text-align: left;
+   text-decoration: none;
+   margin-left: 70px;
+   width: 500px;
+}
+#relate{
+   float: left;
+   
+}
+#images{
+    padding-top: 100px;
+     float:right;
+margin-right: 120px;
+width:250px;
+height: 1000px;
+    
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  background-color: darkred;
+  font-family: "Roboto Slab", serif;
+  color: white;
+}
+
+
+     /*Login CSS*/     /*Login CSS*/     /*Login CSS*/     /*Login CSS*/     /*Login CSS*/     /*Login CSS*/
+
+.preload * {
+  transition: none !important;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  font-size: small;
+  text-transform: uppercase;
+  font-size: 0.7em;
+  margin-bottom: 0.35em;
+}
+
+input[type="text"], input[type="password"] {
+  width: 100%;
+  border: none;
+  padding: 0.5em;
+  border-radius: 2px;
+  margin-bottom: 0.5em;
+  color: #333;
+}
+input[type="text"]:focus, input[type="password"]:focus {
+  outline: none;
+  box-shadow: inset -1px -1px 3px rgba(0, 0, 0, 0.3);
+}
+
+button {
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  padding-bottom: 0.5em;
+  padding-top: 0.5em;
+  border: none;
+  border-radius: 2px;
+  background-color: #7E5AF1;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.25);
+  color: white;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.45);
+}
+
+small {
+  font-size: 1em;
+}
+
+.login--login-submit {
+  float: right;
+}
+
+
+
+.login--toggle-container {
+  position: absolute;
+  background-color: #F15A5C;
+  right: 0;
+  line-height: 2.5em;
+  width: 50%;
+  height: 120px;
+  text-align: right;
+  cursor: pointer;
+  transform: perspective(1000px) translateZ(1px);
+  transform-origin: 0% 0%;
+  transition: all 1s cubic-bezier(0.06, 0.63, 0, 1);
+  backface-visibility: hidden;
+}
+.login--toggle-container .js-toggle-login {
+  font-size: 4em;
+  text-decoration: underline;
+}
+.login--active .login--toggle-container {
+  transform: perspective(1000px) rotateY(180deg);
+  background-color: #bc1012;
+}
+
+.login--username-container, .login--password-container {
+  float: left;
+  background-color: #F15A5C;
+  width: 50%;
+  height: 120px;
+  padding: 0.5em;
+}
+
+.login--username-container {
+  transform-origin: 100% 0%;
+  transform: perspective(1000px) rotateY(180deg);
+  transition: all 1s cubic-bezier(0.06, 0.63, 0, 1);
+  background-color: #bc1012;
+  backface-visibility: hidden;
+}
+.login--active .login--username-container {
+  transform: perspective(1000px) rotateY(0deg);
+  background-color: #F15A5C;
+}
+
+.footer-container {
+	text-align: center;
+}
+
+
+.navigation {
+  
+}
+
+.navbar {
+   background-color:darkred;
+	border-bottom: 3px thick white;
+	margin-bottom: 2px;
+}
+
+.body-container{
+    background-color: white;
+    
+}
+.header {
+    
+    color: black;
+}
+.clear
+{
+  clear: both;  
+}
+#logo {
+    font-weight:bold;
+    margin-left: 15px;
+	margin-top: 8px;
+}
+
+      /* Report CSS*/      /* Report CSS*/      /* Report CSS*/      /* Report CSS*/      /* Report CSS*/
+.calendar-container header {
+	border-radius: 10px 10px 0 0;
+	background: #1C1C22;
+	color: #fff;
+    box-shadow: 1px 1px 7px #1D1F21;
+	padding: 1em 1em;
+    
+    
+}
+
+.logo-container img
+{
+    width: 120px;
+  
+    
+    height: 130px;
+    float: left;
+    color: white;
+}
+
+.logo-container
+{
+   margin: 35px 0px 0px 0px;
+}
+.notice-header
+{
+   display: flex;
+}
+
+
+.day {
+    
+	font-size: 8em;
+	font-weight: 900;
+    height: 110px;
+    text-align: center;
+    
+    margin: 0px 17px 0px 1px;
+	
+    
+}
+.day-header{
+ 
+    float: right;
+    
+    
+}
+.uni-title
+{
+   color:  #DC2A3D;
+   text-align: center;
+
+	width: 50% ;
+    margin: 0 auto;
+	text-transform: capitalize;
+    font-size: 3em;
+	font-weight: 900;
+}
+
+.month {
+    
+	font-size: 4em;
+	
+	text-transform: capitalize;
+}
+.title
+{
+    
+    margin-top: 5px;
+}
+
+.tbody {
+	background: #fff;
+	
+    width: 100%;
+	color: #555;
+	 
+    
+}
+
+.tbody thead {
+	color: white;
+    background-color:darkred;
+	font-weight: 700;
+    border-color:#1C1C22;
+	color: white;
+   
+	
+    
+    
+    
+    
+}
+.tbody thead td{
+    
+    
+   border-right:3px solid white;
+   box-shadow: 0px 1px 5px black;
+   padding:10px;
+    
+}
+
+.last-clear{
+    
+}
+.tbody td {
+	padding: .5em 1em;
+	text-align: center;
+    
+}
+.tbody tbody td{
+    font-weight:bold;
+    height: 20px;
+    padding:14px;
+    
+    
+   
+}
+.tbody tbody tr{
+box-shadow: 2px 2px 4px #E0E0E0;
+}
+.tbody tr{
+   
+    border-radius: 5px;
+     
+}
+.tbody tbody tr:hover{
+     background: #1C1C22;
+	color: white;
+	
+transform: scale(1.03,1.03);
+cursor:pointer;
+}
+
+
+
+
+.container {
+    margin: 0 auto;
+    width: 85%;
+}
