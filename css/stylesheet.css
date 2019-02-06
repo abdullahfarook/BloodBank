@@ -4,9 +4,100 @@ body {
 }
 
 
-.menu{
-	display: flex;
+
+
+/* Custom dropdown */
+.custom-dropdown {
+    
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 12px; /* demo only */
+    border-radius:1px;
+    
 }
+
+.custom-dropdown select {
+  background-color: darkred;
+  color: #fff;
+  font-size: inherit;
+  padding: .5em;
+  padding-right: 2.5em;	
+  border: 0;
+  margin: 0;
+  border-radius: 3px;
+  text-indent: 0.01px;
+    
+}
+#blood {
+    width: 100px; 
+    
+}
+#city select{
+    width: 140px;
+}
+
+.custom-dropdown::before,
+.custom-dropdown::after {
+  content: "";
+  position: absolute;
+  pointer-events: none;
+}
+
+
+
+.overlay {
+  position: absolute;
+
+    
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: visible;
+  opacity: 1;
+}
+.overlay:target {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.popup {
+
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+ 
+  transition: all 5s ease-in-out;
+}
+
+.popup h3 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+
+.popup .close{
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: red;
+  
+  
+}
+
+.popup .close:hover {
+  color: orange;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+
 
 
 
@@ -63,6 +154,7 @@ margin-top:0px;
 {
 	display: flex;
 	width: 100%;
+  
    
 }
 ul {
@@ -187,12 +279,14 @@ li a:hover {
 
 
 .img {
-float:left;
-margin-left:100px;
-width:250px;
-border:5px solid;
-border-color: transparent;
-
+	float: left;
+	margin: auto 7px;
+	width: 50%;
+	border: 5px solid;
+	padding: 10px 57px;
+	position: relative;
+	text-align: justify;
+	border-color: transparent;
 }
 .img:hover {
 
@@ -200,7 +294,10 @@ border:5px solid;
 border-color:gray;    
     }
 #discription {
+    width: 70%;
+   position: relative;
     height:auto;
+	display: block;
    margin-top:2px;
     color: black;
 }
@@ -418,6 +515,7 @@ small {
 .header {
     
     color: black;
+    
 }
 .clear
 {
@@ -427,6 +525,7 @@ small {
     font-weight:bold;
     margin-left: 15px;
 	margin-top: 8px;
+    width: 15%;
 }
 
       /* Report CSS*/      /* Report CSS*/      /* Report CSS*/      /* Report CSS*/      /* Report CSS*/
@@ -515,8 +614,7 @@ small {
     background-color:darkred;
 	font-weight: 700;
     border-color:#1C1C22;
-	color: white;
-   
+
 	
     
     
@@ -570,4 +668,111 @@ cursor:pointer;
 .container {
     margin: 0 auto;
     width: 85%;
+}
+
+.signup-menu {
+    width: 30%;
+    position: relative;
+}
+
+.sigup {
+    width: 30%;
+    position: relative;
+}
+
+.middle {
+    width: 100%;
+    display: flex;
+	position: relative;
+	
+}
+
+
+.test {
+	display: block;
+	width: 30%;
+	background-color: dodgerblue;
+}
+.signup-container {
+    margin-right: 70px;
+	margin-top: 50px;
+	width: 30%px
+	
+}
+.menu-container {
+	display: flex;
+	width: 100%;
+	position: relative;
+}
+
+.search-menu {
+    width: 50%;
+    display: flex;
+    padding-left: 100px;
+}
+
+#button-search {
+   padding-top: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#popup {
+width: 100%;
+height: 100%;
+position: fixed;
+background: rgba(0,0,0,.7);
+top: 0;
+left: 0;
+z-index: 9999;
+visibility: visible;
+}
+
+.window {
+width: 400px;
+height: 100px;
+background: #fff;
+border-radius: 10px;
+position: relative;
+padding: 10px;
+box-shadow: 0 0 5px rgba(0,0,0,.4);
+text-align: center;
+margin: 15% auto;
+color:black;
+}
+
+.window h2 {
+    margin-bottom:10px;
+    color:red;
+    text-decoration:underline;
+}
+.close-button {
+width: 20px;
+height: 20px;
+background: #000;
+border-radius: 50%;
+border: 3px solid #fff;
+display: block;
+text-align: center;
+color: #fff;
+text-decoration: none;
+position: absolute;
+top: -10px;
+right: -10px;
+}
+
+#popup:target {
+visibility: hidden;
 }

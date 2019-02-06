@@ -156,3 +156,8 @@
 }
 
 
+
+.middle {
+    display: flex;
+    position: relative;
+}

@@ -5,7 +5,7 @@
       return function() {
         return $(".login--container").toggleClass("login--active");
       };
-    })(this), 2000);
+    })(this), 4000);
     return $(".js-toggle-login").click((function(_this) {
       return function() {
         window.clearTimeout(_this.timer);
@@ -36,3 +36,12 @@ function showSlides() {
     dots[slideIndex-1].className += " active";
     setTimeout(showSlides, 4000); // Change image every 2 seconds
 }
+
+
+
+
+
+
+
+
+
